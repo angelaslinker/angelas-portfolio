@@ -1,0 +1,52 @@
+<!-- <nav>
+    <ul>
+        <li>
+            <a routerLink="/about" routerLinkActive="active">About</a>
+        </li>
+        <li>
+            <a routerLink="/projects" routerLinkActive="active">Projects</a>
+        </li>
+        <li>
+            <a routerLink="/resume" routerLinkActive="active">Resume</a>
+        </li>
+        <li>
+            <a routerLink="/contact" routerLinkActive="active">Contact</a>
+        </li>
+    </ul>
+</nav> -->
+
+<!-- 
+Notes
+routerLink: Points to the path you’ve defined in your routing module. Make sure your app-routing.module.ts has corresponding routes for /about, /skills, /projects, and /contact.
+routerLinkActive="active": Dynamically adds an active CSS class to the link when its route is active. You can style the .active class in your CSS to highlight the current page.
+Resume Link:
+If your resume is in your src/assets folder, you can refer to it with assets/Your_Resume.pdf.
+If it’s hosted elsewhere (like on LinkedIn or a separate website), you’d use the full URL.
+Use target="_blank" to open in a new tab and rel="noopener noreferrer" for security/best practices. -->
+
+
+<nav>
+    <div class="leftContainer">
+        <img src="a-logo.png" class="logoImage">
+
+        <ul>
+            <li>
+                <a routerLink="/about" routerLinkActive="active" class="angelaBtn">Angela</a>
+            </li>
+            <li>
+                <a routerLink="/projects" routerLinkActive="active">Projects</a>
+            </li>
+            <li>
+                <a routerLink="/resume" routerLinkActive="active">Resume</a>
+            </li>
+            <li>
+                <a routerLink="/contact" routerLinkActive="active">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="right-Container">
+        <div class="date-time">
+            {{ currentDateTime | date:'EEE MMM dd h:mm' }}
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,87 @@
+/* nav {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+li {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    /* Example to highlight active link */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(44, 44, 46, 0.3);
+    margin: 0;
+    height: 30px;
+    font-family: var(--font-primary);
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    cursor: pointer;
+
+}
+
+.date-time {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.weather {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logoImage {
+    width: 50px;
+}
+
+.leftContainer,
+.right-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.angelaBtn {
+    font-weight: bold;
+}
