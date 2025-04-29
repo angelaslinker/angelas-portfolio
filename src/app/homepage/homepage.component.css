@@ -1,18 +1,28 @@
 .homepageContainer {
-    height: 100vh;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FAF9F6;
+
+    background: repeating-linear-gradient(to right,
+            #1866D5,
+            #1866D5 40px,
+            #8fb5ee 40px,
+            #8fb5ee 80px);
+    z-index: -1;
 }
 
 .welcomeText {
     text-align: center;
+    font-size: 40px;
     margin-bottom: 4rem;
+    color: #EADDDA;
+    text-shadow: 2px 2px #1866D5;
 }
 
 .accentText {
@@ -27,6 +37,10 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    font-size: 20px;
+    color: #EADDDA;
+    text-shadow: 2px 2px #1866D5;
+
 }
 
 .infoText>div {

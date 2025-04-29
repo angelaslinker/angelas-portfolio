@@ -18,6 +18,11 @@
             <p>(801) 857-5885</p>
         </div>
     </div>
+
+    <app-folder-icon *ngFor="let f of folders" [label]="f.label" [imgSrc]="f.imgSrc" [top]="f.top" [left]="f.left"
+        (open)="openFolder(f.id)">
+    </app-folder-icon>
+
     <app-dock></app-dock>
 
 </div>

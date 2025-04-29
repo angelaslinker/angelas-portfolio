@@ -1,40 +1,13 @@
-/* nav {
-    background-color: #f2f2f2;
-    border-bottom: 1px solid #ddd;
-    padding: 1rem;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
-}
-
-li {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-a.active {
-    font-weight: bold;
-    border-bottom: 2px solid #000;
-    /* Example to highlight active link */
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(44, 44, 46, 0.3);
-    margin: 0;
-    height: 30px;
+    background-color: #A7211D;
+    margin: 10px 10px 0 10px;
+    height: 50px;
     font-family: var(--font-primary);
-
+    border-radius: 9999px;
+    box-shadow: 2px 2px #941D1A
 }
 
 nav ul {
@@ -50,7 +23,6 @@ nav li {
 }
 
 nav a {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -60,8 +32,9 @@ nav a:hover {
 }
 
 .date-time {
-    color: #fff;
-    margin-right: 1rem;
+    color: #EADDDA;
+    margin-right: 2rem;
+
 }
 
 .weather {
@@ -80,6 +53,9 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 2rem 0 2rem;
+    color: #EADDDA;
+
 }
 
 .angelaBtn {

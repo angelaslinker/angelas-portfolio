@@ -1,0 +1,23 @@
+<div class="dock-wrapper">
+    <p-dock [model]="items" position="bottom">
+        <ng-template pTemplate="item" let-item>
+            <!-- external links -->
+            <a *ngIf="item.url" [href]="item.url" [target]="item.target" class="dock-link" [pTooltip]="item.title"
+                tooltipPosition="top">
+                <img [src]="item.icon" [alt]="item.title" class="dock-icon" />
+            </a>
+
+            <!-- routerLink items (if you add `routerLink` to your MenuItem) -->
+            <a *ngIf="!item.url && item.routerLink" [routerLink]="item.routerLink" class="dock-link"
+                [pTooltip]="item.title" tooltipPosition="top">
+                <img [src]="item.icon" [alt]="item.title" class="dock-icon" />
+            </a>
+
+            <!-- command-based items -->
+            <span *ngIf="!item.url && item.command" class="dock-link" (click)="item.command!()" [pTooltip]="item.title"
+                tooltipPosition="top" style="cursor: pointer;">
+                <img [src]="item.icon" [alt]="item.title" class="dock-icon" />
+            </span>
+        </ng-template>
+    </p-dock>
+</div>

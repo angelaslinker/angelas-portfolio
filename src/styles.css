@@ -2,8 +2,31 @@
 
 body {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 :root {
     --font-primary: 'Inter', sans-serif;
+
+    --p-tooltip-background: #D3D3D3;
+
+    --p-tooltip-padding: 0.5rem 0.75rem;
+    --p-tooltip-border-radius: 0.25rem;
+    --p-tooltip-max-width: 12rem;
+    --p-tooltip-margin: 0 0 100px;
+
+    --p-tooltip-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --p-tooltip-gutter: 1rem;
+
+}
+
+.p-tooltip.p-tooltip-top {
+    transform: translateY(-10px) !important;
+}
+
+.p-tooltip.p-tooltip-top .p-tooltip-arrow {
+    bottom: .25rem !important;
 }
