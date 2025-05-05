@@ -4,7 +4,6 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.8);
     padding: 0.5rem 1rem;
     overflow: visible;
 }
@@ -15,8 +14,8 @@
 }
 
 .dock-icon {
-    width: 46px;
-    height: 48px;
+    width: 44px;
+    height: 46px;
     margin: 0 0.5rem;
     cursor: pointer;
     transition: transform .2s;
@@ -24,5 +23,5 @@
 }
 
 .dock-icon:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
 }

@@ -1,6 +1,6 @@
 <div class="homepageContainer">
 
-    <div class="welcomeText">
+    <!-- <div class="welcomeText">
         <h1>welcome to my</h1>
         <h1 class="accentText">portfolio</h1>
     </div>
@@ -17,7 +17,7 @@
             <p>Irvine, CA</p>
             <p>(801) 857-5885</p>
         </div>
-    </div>
+    </div> -->
 
     <app-folder-icon *ngFor="let f of folders" [label]="f.label" [imgSrc]="f.imgSrc" [top]="f.top" [left]="f.left"
         (open)="openFolder(f.id)">
@@ -25,4 +25,28 @@
 
     <app-dock></app-dock>
 
+</div>
+
+<div class="modal-backdrop" *ngIf="selectedFolderId" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+        <ng-container [ngSwitch]="selectedFolderId">
+
+            <!-- Resume folder -->
+            <div *ngSwitchCase="'resume'" class="resume-modal">
+                <div class="header-wrapper">
+                    <div class="btn-container"><button class="close-btn" (click)="closeModal()">x</button>
+                        <button class="sparkle-btn">⟡</button>
+                        <button class="fullscreen-btn">+</button>
+                    </div>
+                    <a href="assets/resume.pdf" download="Angela_Slinker_Resume.pdf" class="download-resume-btn">
+                        <h2 class="modal-header">📄 Resume.pdf</h2>
+                    </a>
+                </div>
+                <img src="resume.pdf" alt="Resume" class="resume-image" />
+            </div>
+
+        </ng-container>
+
+
+    </div>
 </div>

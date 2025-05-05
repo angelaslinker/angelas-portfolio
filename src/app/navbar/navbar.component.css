@@ -2,12 +2,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #A7211D;
-    margin: 10px 10px 0 10px;
-    height: 50px;
+    background-color: darkgrey;
+    height: 30px;
     font-family: var(--font-primary);
-    border-radius: 9999px;
-    box-shadow: 2px 2px #941D1A
+    background-color: rgba(169, 169, 169, 0.4)
+}
+
+.angelaBtn {
+    font-family: cursive;
+    font-style: italic;
 }
 
 nav ul {
@@ -27,18 +30,22 @@ nav a {
 }
 
 nav a:hover {
+    color: lightgray;
+}
+
+nav a:hover {
     cursor: pointer;
 
 }
 
 .date-time {
-    color: #EADDDA;
+    color: white;
     margin-right: 2rem;
 
 }
 
 .weather {
-    color: #fff;
+    color: white;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -54,7 +61,7 @@ nav a:hover {
     flex-direction: row;
     align-items: center;
     margin: 0 2rem 0 2rem;
-    color: #EADDDA;
+    color: white;
 
 }
 

@@ -11,11 +11,12 @@ body {
 :root {
     --font-primary: 'Inter', sans-serif;
 
-    --p-tooltip-background: #D3D3D3;
+    --p-tooltip-background: #D9D7BF;
+    --p-tooltip-color: #191826;
 
     --p-tooltip-padding: 0.5rem 0.75rem;
     --p-tooltip-border-radius: 0.25rem;
-    --p-tooltip-max-width: 12rem;
+    --p-tooltip-max-width: 06rem;
     --p-tooltip-margin: 0 0 100px;
 
     --p-tooltip-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
@@ -28,5 +29,5 @@ body {
 }
 
 .p-tooltip.p-tooltip-top .p-tooltip-arrow {
-    bottom: .25rem !important;
+    bottom: .01rem !important;
 }

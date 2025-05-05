@@ -8,12 +8,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: #191826; */
+    background-image: url('/desktop_image.jpeg');
 
-    background: repeating-linear-gradient(to right,
+
+    /* background: repeating-linear-gradient(to right,
             #1866D5,
             #1866D5 40px,
             #8fb5ee 40px,
-            #8fb5ee 80px);
+            #8fb5ee 80px); */
     z-index: -1;
 }
 
@@ -21,8 +24,8 @@
     text-align: center;
     font-size: 40px;
     margin-bottom: 4rem;
-    color: #EADDDA;
-    text-shadow: 2px 2px #1866D5;
+    color: #D9D7BF;
+    /* text-shadow: 2px 2px #1866D5; */
 }
 
 .accentText {
@@ -38,8 +41,8 @@
     max-width: 1200px;
     margin: 0 auto;
     font-size: 20px;
-    color: #EADDDA;
-    text-shadow: 2px 2px #1866D5;
+    color: #D9D7BF;
+    /* text-shadow: 2px 2px #1866D5; */
 
 }
 
@@ -58,4 +61,80 @@
 
 .infoText>div:last-child {
     text-align: right;
+}
+
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #BFAC95;
+    border-radius: 8px;
+    /* padding: 1.5rem; */
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.resume-image {
+    width: 100%;
+    padding: 0 10px 0 10px;
+    border-radius: 20px;
+}
+
+.modal-header {
+    text-align: left;
+    color: #191826;
+    margin: 0 10px 0 15px;
+
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.download-resume-btn {
+    text-align: right;
+    align-content: right;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+button {
+    border-radius: 100%;
+    border-style: solid;
+    font-size: 7px;
+}
+
+.close-btn {
+    background-color: #A61B26;
+    border-color: #A61B26;
+}
+
+.sparkle-btn {
+    background-color: yellow;
+    border-color: yellow;
+}
+
+.fullscreen-btn {
+    background-color: green;
+    border-color: green;
+}
+
+.close-btn:hover,
+.download-resume-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
