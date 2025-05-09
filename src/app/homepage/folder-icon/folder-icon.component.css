@@ -1,4 +1,4 @@
-.folderContainer {
+.folder-container {
     margin-top: 80px;
     position: absolute;
     width: 80px;
@@ -6,17 +6,16 @@
     cursor: pointer;
 }
 
-.folderIcon {
+.folder-icon {
     width: 64px;
     height: 64px;
     display: block;
     margin: 0 auto;
 }
 
-.folderLabel {
+.folder-label {
     display: block;
     margin-top: 4px;
     font-size: 12px;
     color: white;
-    /* text-shadow: 1px 1px #1866D5; */
 }

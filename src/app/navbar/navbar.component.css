@@ -55,7 +55,7 @@ nav a:hover {
     width: 50px;
 }
 
-.leftContainer,
+.left-container,
 .right-container {
     display: flex;
     flex-direction: row;
@@ -65,6 +65,6 @@ nav a:hover {
 
 }
 
-.angelaBtn {
+.angela-btn {
     font-weight: bold;
 }

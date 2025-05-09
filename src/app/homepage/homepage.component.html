@@ -1,23 +1,4 @@
-<div class="homepageContainer">
-
-    <!-- <div class="welcomeText">
-        <h1>welcome to my</h1>
-        <h1 class="accentText">portfolio</h1>
-    </div>
-
-    <div class="infoText">
-        <div>
-            <p>Angela Slinker</p>
-            <p>angela.r.slinker&#64;gmail.com</p>
-        </div>
-        <div>
-            <p>( software engineer )</p>
-        </div>
-        <div>
-            <p>Irvine, CA</p>
-            <p>(801) 857-5885</p>
-        </div>
-    </div> -->
+<div class="homepage-container">
 
     <app-folder-icon *ngFor="let f of folders" [label]="f.label" [imgSrc]="f.imgSrc" [top]="f.top" [left]="f.left"
         (open)="openFolder(f.id)">
@@ -34,16 +15,235 @@
             <!-- Resume folder -->
             <div *ngSwitchCase="'resume'" class="resume-modal">
                 <div class="header-wrapper">
-                    <div class="btn-container"><button class="close-btn" (click)="closeModal()">x</button>
-                        <button class="sparkle-btn">⟡</button>
-                        <button class="fullscreen-btn">+</button>
+                    <div class="btn-container">
+                        <button class="mac-btn close-btn" (click)="closeModal()" aria-label="Close"></button>
+                        <button class="mac-btn sparkle-btn" aria-label="Minimize"></button>
+                        <button class="mac-btn fullscreen-btn" aria-label="Fullscreen"></button>
                     </div>
-                    <a href="assets/resume.pdf" download="Angela_Slinker_Resume.pdf" class="download-resume-btn">
-                        <h2 class="modal-header">📄 Resume.pdf</h2>
+                    <a href="assets/resume.pdf" download="Angela_Slinker_Resume.pdf" class="redirect-btn">
+                        <h2 class="modal-header">📄 Download Resume.pdf</h2>
                     </a>
                 </div>
                 <img src="resume.pdf" alt="Resume" class="resume-image" />
             </div>
+
+            <!-- Contact folder-->
+            <div *ngSwitchCase="'contact'" class="project1-modal">
+                <div class="header-wrapper">
+                    <div class="btn-container">
+                        <button class="mac-btn close-btn" (click)="closeModal()" aria-label="Close"></button>
+                        <button class="mac-btn sparkle-btn" aria-label="Minimize"></button>
+                        <button class="mac-btn fullscreen-btn" aria-label="Fullscreen"></button>
+                    </div>
+                    <a href="mailto:angela.r.slinker@gmail.com" target="_blank" class="redirect-btn">
+                        <h2 class="modal-header">Email Me!</h2>
+                    </a>
+                </div>
+                <img src="resume.pdf" alt="Resume" class="resume-image" />
+            </div>
+
+
+            <!-- Senior project folder-->
+
+            <div *ngSwitchCase="'project1'" class="project-modal">
+                <div class="header-wrapper">
+                    <div class="btn-container">
+                        <button class="mac-btn close-btn" (click)="closeModal()" aria-label="Close"></button>
+                        <button class="mac-btn sparkle-btn" aria-label="Minimize"></button>
+                        <button class="mac-btn fullscreen-btn" aria-label="Fullscreen"></button>
+                    </div>
+                    <a href="https://github.com/angelaslinker/Senior-Project" target="_blank" class="redirect-btn">
+                        <h2 class="modal-header">Go To Source Code</h2>
+                    </a>
+                </div>
+                <div class="body-wrapper">
+                    <img src="seniorproj.png" alt="Senior Project" class="project-image" />
+                    <p>Lorem ipsum dolor sit amet. Ut eveniet rerum et consequatur quasi cum odio nemo in voluptas dolor
+                        et
+                        rerum omnis est quod inventore. Et repellendus explicabo sed perspiciatis nostrum non quia
+                        libero
+                        est enim rerum? Eum laboriosam odio nam tempora earum quo omnis voluptatem aut velit rerum et
+                        voluptatem consectetur eum porro optio quo fugit deserunt.
+
+                        Quo vero doloribus aut placeat nostrum vel sint voluptatum ut voluptates itaque et quia
+                        consequatur
+                        est recusandae aliquid! Aut quia aperiam et adipisci reprehenderit ab labore iure id internos
+                        velit
+                        qui enim impedit hic labore debitis. Vel excepturi placeat est inventore odio vel consequatur
+                        quod
+                        sit consequatur consectetur ut internos autem sed vero perferendis! Ut nostrum autem eos dolores
+                        quia et soluta iusto sed nisi labore.Lorem ipsum dolor sit amet. Ut eveniet rerum et consequatur
+                        quasi cum odio nemo in voluptas dolor et rerum omnis est quod inventore. Et repellendus
+                        explicabo
+                        sed perspiciatis nostrum non quia libero est enim rerum? Eum laboriosam odio nam tempora earum
+                        quo
+                        omnis voluptatem aut velit rerum et voluptatem consectetur eum porro optio quo fugit deserunt.
+
+                        Quo vero doloribus aut placeat nostrum vel sint voluptatum ut voluptates itaque et quia
+                        consequatur
+                        est recusandae aliquid! Aut quia aperiam et adipisci reprehenderit ab labore iure id internos
+                        velit
+                        qui enim impedit hic labore debitis. Vel excepturi placeat est inventore odio vel consequatur
+                        quod
+                        sit consequatur consectetur ut internos autem sed vero perferendis! Ut nostrum autem eos dolores
+                        quia et soluta iusto sed nisi labore. est enim rerum? Eum laboriosam odio nam tempora earum quo
+                        omnis voluptatem aut velit rerum et
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- Fullstack showcase folder-->
+
+            <div *ngSwitchCase="'project2'" class="project-modal">
+                <div class="header-wrapper">
+                    <div class="btn-container">
+                        <button class="mac-btn close-btn" (click)="closeModal()" aria-label="Close"></button>
+                        <button class="mac-btn sparkle-btn" aria-label="Minimize"></button>
+                        <button class="mac-btn fullscreen-btn" aria-label="Fullscreen"></button>
+                    </div>
+                    <a href="https://github.com/angelaslinker/Senior-Project" target="_blank" class="redirect-btn">
+                        <h2 class="modal-header">Go To Source Code</h2>
+                    </a>
+                </div>
+                <div class="body-wrapper">
+                    <img src="fullstackshowcase.png" alt="Senior Project" class="project-image" />
+                    <p>Lorem ipsum dolor sit amet. Ut eveniet rerum et consequatur quasi cum odio nemo in voluptas dolor
+                        et
+                        rerum omnis est quod inventore. Et repellendus explicabo sed perspiciatis nostrum non quia
+                        libero
+                        est enim rerum? Eum laboriosam odio nam tempora earum quo omnis voluptatem aut velit rerum et
+                        voluptatem consectetur eum porro optio quo fugit deserunt.
+
+                        Quo vero doloribus aut placeat nostrum vel sint voluptatum ut voluptates itaque et quia
+                        consequatur
+                        est recusandae aliquid! Aut quia aperiam et adipisci reprehenderit ab labore iure id internos
+                        velit
+                        qui enim impedit hic labore debitis. Vel excepturi placeat est inventore odio vel consequatur
+                        quod
+                        sit consequatur consectetur ut internos autem sed vero perferendis! Ut nostrum autem eos dolores
+                        quia et soluta iusto sed nisi labore.Lorem ipsum dolor sit amet. Ut eveniet rerum et consequatur
+                        quasi cum odio nemo in voluptas dolor et rerum omnis est quod inventore. Et repellendus
+                        explicabo
+                        sed perspiciatis nostrum non quia libero est enim rerum? Eum laboriosam odio nam tempora earum
+                        quo
+                        omnis voluptatem aut velit rerum et voluptatem consectetur eum porro optio quo fugit deserunt.
+
+                        Quo vero doloribus aut placeat nostrum vel sint voluptatum ut voluptates itaque et quia
+                        consequatur
+                        est recusandae aliquid! Aut quia aperiam et adipisci reprehenderit ab labore iure id internos
+                        velit
+                        qui enim impedit hic labore debitis. Vel excepturi placeat est inventore odio vel consequatur
+                        quod
+                        sit consequatur consectetur ut internos autem sed vero perferendis! Ut nostrum autem eos dolores
+                        quia et soluta iusto sed nisi labore. est enim rerum? Eum laboriosam odio nam tempora earum quo
+                        omnis voluptatem aut velit rerum et
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- Glossier mock webpage folder-->
+
+
+            <div *ngSwitchCase="'project2'" class="project-modal">
+                <div class="header-wrapper">
+                    <div class="btn-container">
+                        <button class="mac-btn close-btn" (click)="closeModal()" aria-label="Close"></button>
+                        <button class="mac-btn sparkle-btn" aria-label="Minimize"></button>
+                        <button class="mac-btn fullscreen-btn" aria-label="Fullscreen"></button>
+                    </div>
+                    <a href="https://github.com/angelaslinker/Senior-Project" target="_blank" class="redirect-btn">
+                        <h2 class="modal-header">Go To Source Code</h2>
+                    </a>
+                </div>
+                <div class="body-wrapper">
+                    <img src="fullstackshowcase.png" alt="Senior Project" class="project-image" />
+                    <p>Lorem ipsum dolor sit amet. Ut eveniet rerum et consequatur quasi cum odio nemo in voluptas dolor
+                        et
+                        rerum omnis est quod inventore. Et repellendus explicabo sed perspiciatis nostrum non quia
+                        libero
+                        est enim rerum? Eum laboriosam odio nam tempora earum quo omnis voluptatem aut velit rerum et
+                        voluptatem consectetur eum porro optio quo fugit deserunt.
+
+                        Quo vero doloribus aut placeat nostrum vel sint voluptatum ut voluptates itaque et quia
+                        consequatur
+                        est recusandae aliquid! Aut quia aperiam et adipisci reprehenderit ab labore iure id internos
+                        velit
+                        qui enim impedit hic labore debitis. Vel excepturi placeat est inventore odio vel consequatur
+                        quod
+                        sit consequatur consectetur ut internos autem sed vero perferendis! Ut nostrum autem eos dolores
+                        quia et soluta iusto sed nisi labore.Lorem ipsum dolor sit amet. Ut eveniet rerum et consequatur
+                        quasi cum odio nemo in voluptas dolor et rerum omnis est quod inventore. Et repellendus
+                        explicabo
+                        sed perspiciatis nostrum non quia libero est enim rerum? Eum laboriosam odio nam tempora earum
+                        quo
+                        omnis voluptatem aut velit rerum et voluptatem consectetur eum porro optio quo fugit deserunt.
+
+                        Quo vero doloribus aut placeat nostrum vel sint voluptatum ut voluptates itaque et quia
+                        consequatur
+                        est recusandae aliquid! Aut quia aperiam et adipisci reprehenderit ab labore iure id internos
+                        velit
+                        qui enim impedit hic labore debitis. Vel excepturi placeat est inventore odio vel consequatur
+                        quod
+                        sit consequatur consectetur ut internos autem sed vero perferendis! Ut nostrum autem eos dolores
+                        quia et soluta iusto sed nisi labore. est enim rerum? Eum laboriosam odio nam tempora earum quo
+                        omnis voluptatem aut velit rerum et
+
+                    </p>
+                </div>
+            </div>
+            <!-- Ecommerce website folder-->
+
+
+            <div *ngSwitchCase="'project4'" class="project-modal">
+                <div class="header-wrapper">
+                    <div class="btn-container">
+                        <button class="mac-btn close-btn" (click)="closeModal()" aria-label="Close"></button>
+                        <button class="mac-btn sparkle-btn" aria-label="Minimize"></button>
+                        <button class="mac-btn fullscreen-btn" aria-label="Fullscreen"></button>
+                    </div>
+                    <a href="https://github.com/angelaslinker/Senior-Project" target="_blank" class="redirect-btn">
+                        <h2 class="modal-header">Go To Source Code</h2>
+                    </a>
+                </div>
+                <div class="body-wrapper">
+                    <img src="fullstackshowcase.png" alt="Senior Project" class="project-image" />
+                    <p>Lorem ipsum dolor sit amet. Ut eveniet rerum et consequatur quasi cum odio nemo in voluptas dolor
+                        et
+                        rerum omnis est quod inventore. Et repellendus explicabo sed perspiciatis nostrum non quia
+                        libero
+                        est enim rerum? Eum laboriosam odio nam tempora earum quo omnis voluptatem aut velit rerum et
+                        voluptatem consectetur eum porro optio quo fugit deserunt.
+
+                        Quo vero doloribus aut placeat nostrum vel sint voluptatum ut voluptates itaque et quia
+                        consequatur
+                        est recusandae aliquid! Aut quia aperiam et adipisci reprehenderit ab labore iure id internos
+                        velit
+                        qui enim impedit hic labore debitis. Vel excepturi placeat est inventore odio vel consequatur
+                        quod
+                        sit consequatur consectetur ut internos autem sed vero perferendis! Ut nostrum autem eos dolores
+                        quia et soluta iusto sed nisi labore.Lorem ipsum dolor sit amet. Ut eveniet rerum et consequatur
+                        quasi cum odio nemo in voluptas dolor et rerum omnis est quod inventore. Et repellendus
+                        explicabo
+                        sed perspiciatis nostrum non quia libero est enim rerum? Eum laboriosam odio nam tempora earum
+                        quo
+                        omnis voluptatem aut velit rerum et voluptatem consectetur eum porro optio quo fugit deserunt.
+
+                        Quo vero doloribus aut placeat nostrum vel sint voluptatum ut voluptates itaque et quia
+                        consequatur
+                        est recusandae aliquid! Aut quia aperiam et adipisci reprehenderit ab labore iure id internos
+                        velit
+                        qui enim impedit hic labore debitis. Vel excepturi placeat est inventore odio vel consequatur
+                        quod
+                        sit consequatur consectetur ut internos autem sed vero perferendis! Ut nostrum autem eos dolores
+                        quia et soluta iusto sed nisi labore. est enim rerum? Eum laboriosam odio nam tempora earum quo
+                        omnis voluptatem aut velit rerum et
+
+                    </p>
+                </div>
+            </div>
+
 
         </ng-container>
 

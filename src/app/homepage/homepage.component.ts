@@ -28,26 +28,40 @@ export class HomepageComponent {
       left: '40px'
     },
     {
-      id: 'projects',
-      label: 'Projects',
+      id: 'contact',
+      label: 'Contact Me',
       imgSrc: '/beigeFinder.png',
       top: '20px',
       left: '160px'
     },
     {
-      id: 'projects',
-      label: 'Projects',
+      id: 'project1',
+      label: 'Senior Project',
       imgSrc: '/beigeFinder.png',
       top: '20px',
       left: '1080px'
     },
     {
-      id: 'projects',
-      label: 'Projects',
+      id: 'project2',
+      label: 'Fullstack Showcase',
       imgSrc: '/beigeFinder.png',
       top: '20px',
       left: '960px'
-    }
+    },
+    {
+      id: 'project3',
+      label: 'Glossier Mock Website',
+      imgSrc: '/beigeFinder.png',
+      top: '150px',
+      left: '960px'
+    },
+    {
+      id: 'project4',
+      label: 'Ecommerce Website',
+      imgSrc: '/beigeFinder.png',
+      top: '150px',
+      left: '1080px'
+    },
   ];
 
   openFolder(id: string) {
