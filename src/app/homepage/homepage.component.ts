@@ -50,7 +50,7 @@ export class HomepageComponent {
     },
     {
       id: 'project3',
-      label: 'Glossier Mock Website',
+      label: 'PHP Motors',
       imgSrc: '/beigeFinder.png',
       top: '150px',
       left: '960px'
