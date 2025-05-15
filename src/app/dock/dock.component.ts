@@ -43,7 +43,6 @@ export class DockComponent {
     {
       icon: 'musicDock.png',
       title: 'Music',
-      // command: () => this.playMusic()
     }
   ];
 
