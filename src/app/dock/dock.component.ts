@@ -26,7 +26,7 @@ export class DockComponent {
     {
       icon: 'gitHubDock.webp',
       title: 'GitHub',
-      url: 'https://github.com/your‑username',
+      url: 'https://github.com/angelaslinker',
       target: '_blank'
     },
     {
@@ -37,7 +37,7 @@ export class DockComponent {
     {
       icon: 'linkedinDock.png',
       title: 'LinkedIn',
-      url: 'https://linkedin.com/in/your‑profile',
+      url: 'https://www.linkedin.com/in/angela-slinker-55080416b/',
       target: '_blank'
     },
     {
